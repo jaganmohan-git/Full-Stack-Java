@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- document.getElementById() -->
+        <div id="demo">Hello World</div>
+        <script>
+            var element=document.getElementById('demo');
+            element.style.color="blue";
+        </script>
+
+        <!-- by using tags -->
+        <p> First paragraph</p>
+        <p> Second paragraph</p>
+        <script>
+            var paragraph=document.getElementById(p);
+            paragraph[0].style.fontweight="bold";
+        </script>
+
+        <!-- document.querySelector -->
+        <div class="example">This is div</div>
+        <script>
+            var div=document.querySelector('.example');
+            div.style.color="green";
+        </script>
+
+        <!-- document.queryselectorAll() -->
+        <p class="item">item1</p>
+        <p class="item">item2</p>
+        <script>
+            var items=document.querySelectorAll('.item');
+            items.forEach(item => {
+                item.style.color="red";
+            });
+        </script>
+
+
+        <!-- onclick event handler -->
+        <button onclick="alert('Button clicked')">Click</button>
+
+
+        <!-- creating html using javascript -->
+        <script>
+
+            // Create a new <div> element
+            let newDiv=document.createElement('div');
+
+            newDiv.textContent="This is a new div";
+            newDiv.className="my-class";
+            document.body.appendChild(newDiv);
+        </script>
+
+        <!-- document.getElementByClassName() -->
+        <p class="highlight">This a paragraph with class "highlight".</p>
+        <p>This a paragraph without class</p>
+        <script>
+            //Get element by class name
+            const elements=document.getElementsByClassName("highlight");
+            elements[0].style.color="red";
+        </script>
+
+
+        <!-- document.getElementByName() -->
+        <input type="text" name="username" value="Jagan">
+        <script>
+            const elem=document.getElementsByName('username')[0];
+            console.log(elem.value);
+        </script><br><br>
+
+
+        <!-- Event handling with onkeyup -->
+        Enter your name:<input type="text" id="fname" onkeyup="myFunction()">
+        <script>
+            function myFunction(){
+                let x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+        <br>
+
+        <!-- addEventListener() -->
+        <input type="Submit" id="myButton">
+        <script>
+            const button=document.getElementById("myButton");
+            button.addEventListener("click", ()=>{
+                alert("Button Clicked");
+            });
+        </script>
+        <br>
+        <br>
+
+        <!-- removeEventListener(): It reset the function -->
+        <input type="Submit" id="myButton">
+        <script>
+            const buttons=document.getElementById("myButton");
+            function handleclick(){
+                alert("Button Clicked");
+                buttons.removeEventListener("click",handleclick);
+            }
+            button.addEventListener("click",handleclick);
+        </script>
+</body>
+</html>

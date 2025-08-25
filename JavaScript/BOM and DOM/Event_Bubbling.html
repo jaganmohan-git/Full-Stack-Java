@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Event Propagation -->
+    <div id="parent" style="border: 2px solid red; padding: 20px;">
+        <button id="child">Child</button>
+    </div>
+    <script>
+        document.getElementById('parent').addEventListener('click',()=>{alert('Parent Clicked')});
+        document.getElementById('child').addEventListener('click',()=>{alert('Child Clicked')});
+    </script>
+
+
+    <!-- Event Capturing() -->
+    <div id="parents" style="border: 2px solid red; padding: 20px;">
+        <button id="childs">Child</button>
+    </div>
+    <script>
+        document.getElementById('parents').addEventListener('click',()=>{alert('Parent Clicked')
+        }, {capture:true});
+    </script>
+
+
+    <!-- stopPropagation() -->
+    <div id="parent1" style="border: 2px solid red; padding: 20px;">
+        <button id="child1">Child</button>
+    </div>
+    <script>
+        document.getElementById('parent1').addEventListener('click',()=>{alert('Parent Clicked')});
+        document.getElementById('child1').addEventListener('click',()=>{alert('Child Clicked');
+            event.stopPropagation();
+        });
+    </script>
+
+
+    <!-- Event preventDefault() -->
+    <a href="https://www.google.com" id="link">Click me</a>
+    <script>
+        document.getElementById('link').addEventListener('click',(event)=>{
+            event.preventDefault();
+            alert('Default Prevented');
+        });
+    </script>
+</body>
+</html>

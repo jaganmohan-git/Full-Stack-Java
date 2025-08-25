@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // at() method is used to access the particular element by using array index.
+        let str=["jagan","mohan"];
+        console.log(str.at(0));
+
+        // include() searching the elementin an array.
+        let arr=["chintu"];
+        console.log(arr.includes("c"))
+
+        // find() method return the first element which satisfies the condition.
+        let students=[ {id:1,name:"Ravi"} ,{id:2,name:"Gani"}, {id:3,name:"vinay"}];
+        let stu=students.filter(s=>s.id===3);
+        console.log(stu);
+
+        //map() method transform every element in an array an return a new array.
+        let number=[1,2,3,4,5];
+        let square=number.map(num=>num*2);
+        console.log(number); //length 5
+        console.log(square); //multiple the numbers
+
+        //filter() method filter elements based on the condition and returns a new array.
+        let num=[1,2,3,4,5,6];
+        let even=num.filter(n=>n%2==0);
+        console.log(even);
+
+
+        //reduce() executes a function on each element of the array and returns a single accumulator value.
+        let numb=[1,2,3,4,5];
+        let sum=numb.reduce((accumulator,currentvalue)=>accumulator + currentvalue,0)
+        console.log(sum);
+
+
+        //for of loop- iterates over iterable object like string ,arrays.
+        let A=[10,20,30,40,50];
+        for(let n of A){
+            console.log(n);
+        }
+
+
+        //Array destructuring- allows you to extract values from an array into separate variable in concised way.
+        let B=[100,200,300,400,500];
+        let[x,y,...z]=B;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+
+        //Spread Operator- allows you to expand or spread elements of an array or object into another array.
+        let C=[1,34,5,6,7,8,8];
+        let D=[2,90,1,6,4,7,0];
+        let combine=[...C,...D];
+        console.log(combine);
+
+
+        //
+        function myfunction(message,...names){
+            console.log(message, "<br>");
+            console.log(names);
+        }
+        myfunction("Hello","jagan","mohan","reddy");
+    </script>
+</body>
+</html>

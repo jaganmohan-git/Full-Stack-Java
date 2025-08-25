@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person={
+            name:"jagan",
+            age:22,
+            email:["aithepallijaganmohan@gmail.com", "jaganmohan3027@gmail.com", "jaganmohan123@gmail.com"],
+            phone_no:["8639115990", "9454476589"]
+        }
+        document.write(person);
+        console.log(person);
+        person["location"]="Banglore";
+        console.log(person);
+
+        //adding new element into array:
+        //push method is  for insert the element in end of the array
+        let number=[]
+        number.push(10);
+        console.log(number);
+
+        number.push(20);
+        number.push(30);
+        console.log(number);
+
+        //unshift method is  for insert the element at the begining of the array
+        number.unshift(50);
+        console.log(number);
+
+
+        //access the elements:
+        //
+        let element=number.at(0);
+        number.at(1);
+        number.at(2);
+        number.at(3);
+        console.log(number);
+        
+
+        //includes methos is to search the element in array is present are not
+        console.log(number.includes(501));
+        console.log(number.includes(100));
+
+
+        //find()
+        console.log(number.find(num => num==30));
+        console.log(number.find(num => num>50));
+        console.log(number.find(num => num<50));
+
+
+
+        console.log(number.length);
+
+        console.log(typeof(number));
+
+
+        console.log(Array.isArray(number));
+
+
+        for(let i=0;i<number.length;i++){
+            //console.log(number.at(i));
+            console.log(number[i]);
+        
+
+        if(number.at(i)%3==0){
+            console.log(number[i]);
+        }
+    }
+
+
+        //for in loop same as for loop
+        for(let element in number){
+            console.log(element+ " " + number[element]);
+        }
+
+
+        //update and delete
+        number[0]=40;
+        console.log(number);
+
+        //delete
+        delete number[0];
+        console.log(number);
+
+        number[0]=200;
+        console.log(number);
+
+    </script>
+</body>
+</html>

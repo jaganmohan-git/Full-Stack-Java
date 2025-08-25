@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //concat() are used to merge two or more array into single array
+        let a1=[10,20,30];
+        let a2=[40,50,60];
+        let a4=[70,80,90];
+        let a3=a1.concat(a2,a4);
+        console.log(a3);
+
+        //sort() is used arrange the element in default ascending order
+        let array1=[15,30,70,200,20,40,80];
+        console.log(array1.sort());  //sort based on ascii values.
+        console.log(array1.sort((a,b) => a-b)); //sort in ascending order.
+        console.log(array1.sort((a,b) => b-a)); //sort in descending order.
+
+
+        let array2=["hi","bye","duck","welcome"];
+        console.log(array2.sort());
+        console.log(array2.reverse());
+
+        //slice() - returns a new array object with specified indexes of elements.
+        let fruits=["apple","mango","orange","guaua","pineapple"];
+        let fruit= fruits.slice(0,2);
+        console.log(fruit);
+
+        fruit=fruits.slice(2,4);
+        console.log(fruit);
+
+        //pineapple guaua orange
+        console.log(fruit.slice(2,5).reverse());
+
+        //it start from -3 and travels till end
+        console.log(fruits.slice(-3,));
+
+
+
+        //splice() - adding ,deleting,modifying elements from the specified index.
+        fruits.splice(2,2);
+        console.log(fruits);
+        fruits.splice(2,0,"strawberry","cherry","banana");
+        console.log(fruits);
+        fruits.splice(3,2,"CHERRY","BANANA");
+        console.log(fruits);
+
+
+
+        //pop() -is used to remove the last element in an array.
+        let stack=[10,20,30,40,50];
+        console.log(stack.pop());
+        console.log(stack);
+
+        
+        //shift() - is used to remove the first element in an array.
+        console.log(stack.shift());
+        console.log(stack);
+
+
+        //indexof() - is used to search element index in an array.
+        console.log(stack.indexOf(15));
+
+
+        //join() - is used conacatenates a;; array element into a single string.
+        let car=["bmw","audi","gt","mg","RR"];
+        console.log(car.join("-"));
+
+
+
+    </script>
+</body>
+</html>

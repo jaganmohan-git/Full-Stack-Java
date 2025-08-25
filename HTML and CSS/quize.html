@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Development Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/018/990/233/small/3d-blue-mockup-web-site-poster-for-online-support-center-services-with-white-questions-signs-with-answers-quiz-faq-design-illustration-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+    .option {
+  padding: 6px 12px;
+  font-size: 14px;
+  width: 50%;
+  border-radius: 4px;
+}
+
+    .quiz-section {
+      display: none;
+    }
+    .quiz-section.active {
+      display: block;
+    }
+    .option.correct {
+      background-color: #d4edda !important;
+      border-color: #28a745 !important;
+      color: #155724 !important;
+    }
+    .option.wrong {
+      background-color: #f8d7da !important;
+      border-color: #dc3545 !important;
+      color: #721c24 !important;
+    }
+  </style>
+</head>
+<body>
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Web Development Quiz</h2>
+
+  <!-- Section: HTML -->
+  <div id="section-html" class="quiz-section active">
+    <h4>HTML Quiz</h4>
+    <div id="html-quiz">
+      
+      <div class="mb-4">
+        <p>1. How many heading levels are there in HTML?</p>
+        <div class="list-group">
+          <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">a) 3</button>
+          <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">b) 4</button>
+          <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">c) 5</button>
+          <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd', true)">d) 6</button>
+        </div>
+      </div>
+
+      <div class="mb-4">
+  <p>2. What is the correct HTML tag for a line break?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;br&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;p&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;hr&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;line&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>3. Which HTML tag is used to display an image?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;img&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;picture&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;src&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;image&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>4. What attribute is used to define the image path in &lt;img&gt; tag?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) href</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) path</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) src</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) link</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>5. Which tag is used to create a hyperlink in HTML?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;a&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;link&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;href&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;url&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>6. How do you make a numbered list in HTML?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">a) &lt;ol&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">b) &lt;ul&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) &lt;li&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) &lt;list&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>7. Which HTML tag is used for a table row?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;tr&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;td&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;th&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;table&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>8. In which section of HTML does the &lt;title&gt; tag belong?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;head&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;body&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;header&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;nav&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>9. Which tag defines a paragraph in HTML?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) &lt;h1&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) &lt;p&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) &lt;div&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) &lt;section&gt;</button>
+  </div>
+</div>
+<div class="mb-4">
+  <p>10. How many heading levels are there in HTML?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">a) 3</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">b) 4</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">c) 5</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd', true)">d) 6</button>
+  </div>
+</div>
+
+
+      <button class="btn btn-primary" onclick="showSection('section-css')">Next</button>
+    </div>
+  </div>
+
+  <!-- Section: CSS -->
+  <div id="section-css" class="quiz-section">
+    <h4>CSS Quiz</h4>
+    
+    <div class="mb-4">
+    <p>1. What does CSS stand for?</p>
+    <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) Creative Style Sheets</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) Colorful Style Sheets</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) Cascading Style Sheets</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) Computer Style Sheets</button>
+  </div>
+  </div>
+
+<div class="mb-4">
+  <p>2. Which HTML attribute is used to apply inline CSS?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) css</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) style</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) styles</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) class</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>3. Which property is used to change the text color in CSS?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) color</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) text-color</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) font-color</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) foreground</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>4. How do you select an element with id "header" in CSS?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) .header</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) header</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) #header</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) *header</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>5. Which property controls the size of text?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) text-style</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) font-size</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) text-size</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) font-weight</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>6. Which CSS property is used to change the background color?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) background-color</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) bgcolor</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) color-background</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) background-style</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>7. How do you apply the same style to multiple selectors?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd', true)">a) Separate with commas</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">b) Separate with dots</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">c) Use spaces</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">d) Use parentheses</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>8. What does the "display: none;" declaration do?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) Hides text only</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) Completely hides the element</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) Makes element transparent</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) Minimizes the element</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>9. Which value of position property makes the element fixed to screen?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) relative</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) absolute</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) fixed</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) static</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>10. How can you make a list not display bullets?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) list-style-type: none</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) text-decoration: none</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) bullet: off</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) style: none</button>
+  </div>
+</div>
+
+
+    <button class="btn btn-primary mt-3" onclick="showSection('section-js')">Next</button>
+  </div>
+
+  <!-- Section: JavaScript -->
+  <div id="section-js" class="quiz-section">
+    <h4>JavaScript Quiz</h4>
+    
+    <div class="mb-4">
+  <p>1. What is the correct syntax for referring to an external JavaScript file?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) &lt;script href="script.js"&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) &lt;js src="script.js"&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) &lt;script src="script.js"&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) &lt;link src="script.js"&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>2. Inside which HTML element do we put the JavaScript code?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) &lt;script&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) &lt;javascript&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) &lt;code&gt;</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) &lt;js&gt;</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>3. How do you write "Hello World" in an alert box?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) alertBox("Hello World");</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) alert("Hello World");</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) msg("Hello World");</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) message("Hello World");</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>4. Which symbol is used for comments in JavaScript?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) //</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) #</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) <!-- --></button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) **</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>5. How do you declare a JavaScript variable?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) v name = "value"</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) var: name = "value"</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) var name = "value"</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) string name = "value"</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>6. Which operator is used to assign a value to a variable?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) ==</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) =</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) ===</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) :=</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>7. How do you create a function in JavaScript?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a', true)">a) function myFunction() { }</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">b) def myFunction() { }</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">c) function:myFunction() { }</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'a')">d) create.myFunction() { }</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>8. How do you call a function named "myFunction"?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">a) call function myFunction()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">b) call myFunction()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c', true)">c) myFunction()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'c')">d) function.myFunction()</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>9. Which event occurs when the user clicks on an HTML element?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd', true)">a) onclick</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">b) onmouseclick</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">c) onmouseover</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'd')">d) onchange</button>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p>10. Which method is used to write content into an HTML document?</p>
+  <div class="list-group">
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">a) console.log()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b', true)">b) document.write()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">c) window.alert()</button>
+    <button class="list-group-item list-group-item-action option" onclick="checkAnswer(this, 'b')">d) innerHTML()</button>
+  </div>
+</div>
+
+    <button class="btn btn-success mt-3" onclick="finishQuiz()">Submit</button>
+  </div>
+
+  <div id="result" class="alert alert-success mt-4 d-none">
+    Quiz completed! Thank you for participating.
+  </div>
+</div>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.quiz-section').forEach(section => section.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  function checkAnswer(btn, correctOption, isCorrect = false) {
+    const group = btn.parentElement;
+    const buttons = group.querySelectorAll('button');
+
+    buttons.forEach(b => {
+      b.disabled = true;
+      if (b.textContent.trim().startsWith(correctOption)) {
+        b.classList.add('correct');
+      } else if (b === btn && !isCorrect) {
+        b.classList.add('wrong');
+      }
+    });
+  }
+
+  function finishQuiz() {
+    document.querySelectorAll('.quiz-section').forEach(section => section.classList.remove('active'));
+    document.getElementById('result').classList.remove('d-none');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+        .textcolor{
+            color: rgb(65, 46, 22);
+        }
+        #bgcolor{
+            background-color: blue;
+            color: aquamarine;
+        }
+        ol{
+            background-color: blueviolet;
+            color: antiquewhite;
+            font-size: x-large;
+        }
+        *{
+            font-style: italic;
+        }
+        div p{
+            background-color: brown;
+            color: aliceblue;
+        }
+        ol>li{
+            background-color: rgb(48, 149, 237);
+            color: rgb(162, 24, 107);
+        }
+        h1+p{
+            background-color: rgb(49, 12, 169);
+        }
+        input[type=text]{
+            font-style: italic ;
+        }
+        a[]
+
+    

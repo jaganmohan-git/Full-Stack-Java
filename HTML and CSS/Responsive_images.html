@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image </title>
+  <style>
+      .responsive-img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    #img-large {
+      display: block;
+    }
+
+    #img-small {
+      display: none;
+    }
+
+    /* Media query for screen width 700px and below */
+    @media (max-width: 700px) {
+      #img-large {
+        display: none;
+      }
+      #img-small {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img id="img-large" class="responsive-img" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHNldHxlbnwwfHwwfHx8MA%3D%3D" alt=" JR.NTR Image - Large Screen">
+
+  <img id="img-small" class="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3BpPYSQyWaT8lTvv0baSP-a3rhXDowkoOJ1kBglCrmKeBY8JibH_0mmH4ho803zUPgfA&usqp=CAU" alt="Alternate Image - Small Screen">
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 200px 200px;
+            grid-template-areas: "a a b c d" "a a e f g";
+            gap: 20px;
+        }
+        .grid div{
+            border:2px solid black;
+        }
+        #i1{
+            grid-area: a;
+        }
+        #i2{
+            grid-area: b;
+        }
+        #i3{
+            grid-area: c;
+        }
+        #i4{
+            grid-area: d;
+        }
+        #i5{
+            grid-area: e;
+        }
+        a:hover{
+            color: rgb(7, 160, 55);
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:active{
+            color: rgb(208, 136, 19);
+        }
+        a:visited{
+            color: rgb(145, 11, 11);
+        }
+        .grid div:nth-child(2){
+            box-shadow: 3px 5px 8px 5px rgb(80, 78, 82);
+        }
+        .grid #i1::first-letter{
+            color: rgb(164, 10, 31);
+            padding-left: 50%;
+            font-size: 40px;
+        }
+        .grid #i1::first-line{
+            color: rgb(17, 222, 95);
+            padding-left: 50%;
+            font-size: 40px;
+        }
+        @media screen and (max-width:500px){
+            .grid{
+            grid-template-areas: "a a" "b c" "d e" "f g";
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div id="i1">
+        <h3>Galaxy</h3>
+        <p>qwertyuiodfghjkghjkdfghjklghjhj</p>
+        <a href="Galaxy.html">click Me</a>
+        
+    </div>
+    <div id="i2">2</div>
+    <div id="i3">3</div>
+    <div id="i4">4</div>
+    <div id="i5"></div>
+    </div>
+</body>
+</html>

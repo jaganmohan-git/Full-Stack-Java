@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    text-shadow:10px 5px 8px rgba(73, 77, 70, 0.859) ;
+
+}
+.text-box{
+    border: 2px solid black;
+    text-align: center;
+    margin-left: 520px;
+    margin-right: 10px;
+    padding: 0px 20px 0px 20px;
+    box-shadow: 10px 20px 8px 5px rgb(136, 143, 123);
+    max-width: 400px;
+    align-content: center;
+}
+.image{
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 500px;
+    box-shadow: 10px 10px 8px 0px rgb(65, 68, 58);
+}

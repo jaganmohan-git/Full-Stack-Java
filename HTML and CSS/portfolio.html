@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" style="background-color: black;">
+    
+    <!-- Brand on the left -->
+    <a class="navbar-brand"style="align-item-center; color:#00FF84; " href="#"><b>Portfolio</b></a>
+    
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navigation links on the right -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-3">
+          <a class="nav-link" aria-current="page"style="color:white" href="#">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link"style="color:white" href="#">Project</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link"style="color:white" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link"style="color:white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+
+<!--grid layout-->
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+    <!-- Text section -->
+    <div class="col-md-6 text-white">
+      <h3>Hello, It's Me</h3>
+      <h1><strong>John Kendric</strong></h1>
+      <h4>And I'm a <span class="text-info">Frontend Developer</span></h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam...</p>
+
+      <!-- Social icons -->
+      <div class="d-flex gap-3 my-3">
+        <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+        <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#"><i class="bi bi-linkedin fs-4"></i></a>
+      </div>
+
+      <!-- CV Button -->
+      <a href="resume/my_resume.pdf" class="btn btn-info text-white">Download CV</a>
+    </div>
+
+    <!-- Image section -->
+    <div class="col-md-6 text-center">
+      <img src="Profile picture (1).png" class="img-fluid" style="max-width: 300px; border-radius: 20px;" alt="Profile">
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

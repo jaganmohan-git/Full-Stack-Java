@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<style>
+    .card-div-img img{
+        width:100%;
+        height: 100%;
+        padding: 10%;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#">AnimeVerse</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">AnimeVerse</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Anime</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Media</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+    </div>
+</div>
+</nav>
+    
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="500">
+<div class="carousel-inner">
+    <div class="carousel-item active">
+    <img src="https://wallpapercave.com/fwp-510/wp13898557.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4674773.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4644584.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4674771.jpeg" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4693774.jpeg" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4772765.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4644582.png" class="d-block w-100" alt="...">
+    </div>
+    
+
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+</div> <!-- carousel ends -->
+
+<!-- === Gallery Section Start === -->
+<div class="container my-5 gallery">
+
+<h2 class="text-center text-danger mb-4">--- Anime Posters ---</h2>
+
+<!-- Page 1 -->
+<div class="row g-4 gallery-page" id="page1">
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/wp/wp11664092.jpg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4824494.png" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4822333.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4822325.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4821903.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4819167.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <!-- Add 5 more images here -->
+</div>
+
+<!-- Page 2 -->
+<div class="row g-4 gallery-page d-none" id="page2">
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4814830.png" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4812928.webp" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4812824.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4812812.png" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+
+    <!-- Add 6 different images -->
+</div>
+
+<!-- Page 3 -->
+<div class="row g-4 gallery-page d-none" id="page3">
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+    <div class="col-6 col-md-4"><img src="https://wallpapercave.com/fuwp-510/uwp4810594.jpeg" class="img-fluid rounded shadow" alt="Anime 1"></div>
+
+    <!-- Add 6 different images -->
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#" onclick="changePage(-1)">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#" onclick="goToPage(1)">1</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="goToPage(2)">2</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="goToPage(3)">3</a></li>
+    <li class="page-item"><a class="page-link" href="#" onclick="changePage(1)">Next</a></li>
+    </ul>
+</nav>
+</div>
+<!-- === Gallery Section End === -->
+
+
+<!--Adding comment Form-->
+<div class="container card mb-3 bg-dark text-white" style="max-width: 540px;">
+<div class="row g-0">
+    <div class="col-md-4 card-div-img">
+    <img src="https://wallpapercave.com/fuwp-510/uwp4772765.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+    <div class="card-body">
+        <form>
+        <div class="mb-3">
+<label for="exampleFormControlInput1" class="form-label">Name</label>
+<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+</div>
+<div class="mb-3">
+<label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="name@example"></textarea>
+</div>
+<div class="mb-3">
+<label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button type="button" class="btn btn-primary">submit</button>
+        </form>
+    </div>
+    </div>
+</div>
+</div>
+
+<!--model-->
+<div class="modal" tabindex="-1" id="modalexample">
+<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">AnimeVerse</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <p>Suggestions</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+</div>
+</div>
+
+
+<!--adding footer-->
+<div class="card text-center bg-dark text-white">
+<div class="card-header">
+    <a aria-current="page" href="#"><i class="bi bi-arrow-up-circle text-white"></i></a>
+</div>
+<div class="card-body">
+    
+    <ul class="nav justify-content-center">
+<li class="nav-item">
+    <a class="nav-link active"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">Active</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">A-Z List</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">Recently Added</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">Upcoming</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">Most Watch</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">FAQ</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link"data-bs-target="#modalexample" data-bs-toggle="modal" href="#">Contact</a>
+</li>
+</ul>
+    <h5 class="card-title text-danger">---AnimeVerse---</h5>
+</div>
+<div class="card-footer">
+    <p class="card-text">Copyright @ AnimeVerse.to. All Rights reserved</p>
+</div>
+</div>
+</body>
+</html>

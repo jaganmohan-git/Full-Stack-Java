@@ -1,0 +1,26 @@
+.text {
+margin: 150px 100px;
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 1.8;
+}
+
+.fixed {
+position: fixed;
+top: 30px;
+left: 30px;
+background-color: red;
+color: white;
+padding: 20px 40px;
+font-size: 28px;
+font-weight: bold;
+border: 2px solid black;
+z-index: 10;
+}
+.highlight {
+color: white;
+font-weight: bold;
+border: dotted rgb(196, 188, 188);
+outline: none;
+}
+

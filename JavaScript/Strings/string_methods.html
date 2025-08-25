@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //charAt() - is used to retrieve character at specified index.
+        const text="Java script";
+        console.log(text.charAt(5));
+
+
+        //Length() - is used to gives the length of the string.
+        console.log(text.length);
+
+
+        //toLowercase() - converts the string into lowercase.
+        console.log(text.toLowerCase());
+
+
+        //toUppercase() - converts the string into uppercase.
+        console.log(text.toUpperCase());
+
+        //repeat() - repeat the string by original string a specified no of times.
+        console.log(text.repeat(3));
+
+
+        //includes() - check if the string present are not present=true or not present=false.
+        console.log(text.includes("Java"));
+
+
+
+
+        //indexing in string
+        //square brackets
+        const str="Hello World!";
+        console.log(str[0]);
+
+
+        //slice - slice the string.
+        console.log(str.slice(0,5));
+
+
+
+        //indexof() - finds the index in a string.
+        console.log(str.indexOf('H'));
+
+
+        //valueOf() - Returns primitive value of string object.
+        console.log(str.valueOf());
+
+
+        //replace() - replace the string of first occuerence.
+        const str2="Hello World! World is beautiful.";
+        console.log(str2.replace("World","universe"));
+
+
+        //replaceAll() - replace the string of all occuerence.
+        console.log(str2.replaceAll("World","universe"));
+
+
+        //startswith() - if the starting string true or not.
+        console.log(str2.startsWith("Hello"));
+
+
+        //endswith() - if the ending string true or not.
+        console.log(str2.endsWith("beautiful"));
+
+
+        //substring() - extract a substring from a string based on specified start and end indices.
+        console.log(str2.substring(0,11));
+
+
+        //split() - splits the string into array string.
+        console.log(str2.split())
+
+    </script>
+</body>
+</html>

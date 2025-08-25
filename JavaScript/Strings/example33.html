@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Get Form Values</title>
+</head>
+<body>
+    <h2>User Form</h2>
+
+    <form onsubmit="getValues(event)">
+    <label>First Name:</label>
+    <input type="text" id="fname"><br><br>
+
+    <label>Last Name:</label>
+    <input type="text" id="lname"><br><br>
+
+    <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    function getValues(event) {
+      event.preventDefault(); // prevent page refresh
+        let firstName = document.getElementById("fname").value;
+        let lastName = document.getElementById("lname").value;
+
+        console.log("First Name: " + firstName);
+        console.log("Last Name: " + lastName);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price=0;
+        for(que=1;que<=3;que++){
+            let ans="";
+            switch(que){
+                case 1:
+                    ans=prompt("what is js?\n a.scripting \n b.markup");
+                    if(ans=="a"){
+                        price += 1000* que;
+                        console.log("you won prize of"+price);
+                    }
+                    break;
+                    case 2:
+                    ans=prompt("what is html?\n a.scripting \n b.markup");
+                    if(ans=="b"){
+                        price += 1000* que;
+                        console.log("you won prize of"+price);
+                    }
+                    break;
+                    case 3:
+                    ans=prompt("what is cs?\n a.styling \n b.markup");
+                    if(ans=="a"){
+                        price += 1000* que;
+                        console.log("you won prize of"+price);
+                    }
+                    break;
+            }
+            if(ans=="a" && que==1 || ans=="b" && que==2 || ans!="a"){
+                console.log("you lost the game");
+            }
+        }
+    </script>
+</body>
+</html>

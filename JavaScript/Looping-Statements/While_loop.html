@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let count=0;
+        let total_amount=0;
+        while(true){
+            let currency=prompt("Is currency present");
+            if(currency=="yes"){
+                let money=parseInt(prompt("Enter the amount"));
+                if(money===10 || money===20 || money===50 || money===100 ||money===500){
+                    count=count+1;
+                    total_amount = total_amount+ money;
+            }
+            else{
+                console.log("Invalid currency , please take it out");
+            }
+        }
+        else{
+            break;
+        }
+    }
+    console.log(total_amount);
+    </script>
+</body>
+</html>
